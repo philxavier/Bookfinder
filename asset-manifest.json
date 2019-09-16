@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/philxavier/Bookfinder/static/css/main.f3a11ab6.chunk.css",
-    "main.js": "/philxavier/Bookfinder/static/js/main.238df23a.chunk.js",
-    "main.js.map": "/philxavier/Bookfinder/static/js/main.238df23a.chunk.js.map",
-    "runtime~main.js": "/philxavier/Bookfinder/static/js/runtime~main.6f1077d5.js",
-    "runtime~main.js.map": "/philxavier/Bookfinder/static/js/runtime~main.6f1077d5.js.map",
-    "static/js/2.d7b78741.chunk.js": "/philxavier/Bookfinder/static/js/2.d7b78741.chunk.js",
-    "static/js/2.d7b78741.chunk.js.map": "/philxavier/Bookfinder/static/js/2.d7b78741.chunk.js.map",
-    "index.html": "/philxavier/Bookfinder/index.html",
-    "precache-manifest.6d907ad9c280b73389aba3d8055ae64a.js": "/philxavier/Bookfinder/precache-manifest.6d907ad9c280b73389aba3d8055ae64a.js",
-    "service-worker.js": "/philxavier/Bookfinder/service-worker.js",
-    "static/css/main.f3a11ab6.chunk.css.map": "/philxavier/Bookfinder/static/css/main.f3a11ab6.chunk.css.map"
+    "main.css": "/Bookfinder/static/css/main.f3a11ab6.chunk.css",
+    "main.js": "/Bookfinder/static/js/main.238df23a.chunk.js",
+    "main.js.map": "/Bookfinder/static/js/main.238df23a.chunk.js.map",
+    "runtime~main.js": "/Bookfinder/static/js/runtime~main.b3373bef.js",
+    "runtime~main.js.map": "/Bookfinder/static/js/runtime~main.b3373bef.js.map",
+    "static/js/2.d7b78741.chunk.js": "/Bookfinder/static/js/2.d7b78741.chunk.js",
+    "static/js/2.d7b78741.chunk.js.map": "/Bookfinder/static/js/2.d7b78741.chunk.js.map",
+    "index.html": "/Bookfinder/index.html",
+    "precache-manifest.0c0beaf65e54dad6cd3b43165ab1bad7.js": "/Bookfinder/precache-manifest.0c0beaf65e54dad6cd3b43165ab1bad7.js",
+    "service-worker.js": "/Bookfinder/service-worker.js",
+    "static/css/main.f3a11ab6.chunk.css.map": "/Bookfinder/static/css/main.f3a11ab6.chunk.css.map"
   }
 }
