@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/philxavier/Bookfinder/static/css/main.f3a11ab6.chunk.css",
+    "main.js": "/philxavier/Bookfinder/static/js/main.238df23a.chunk.js",
+    "main.js.map": "/philxavier/Bookfinder/static/js/main.238df23a.chunk.js.map",
+    "runtime~main.js": "/philxavier/Bookfinder/static/js/runtime~main.6f1077d5.js",
+    "runtime~main.js.map": "/philxavier/Bookfinder/static/js/runtime~main.6f1077d5.js.map",
+    "static/js/2.d7b78741.chunk.js": "/philxavier/Bookfinder/static/js/2.d7b78741.chunk.js",
+    "static/js/2.d7b78741.chunk.js.map": "/philxavier/Bookfinder/static/js/2.d7b78741.chunk.js.map",
+    "index.html": "/philxavier/Bookfinder/index.html",
+    "precache-manifest.76c1ccbe36bb617a8f445d16d99b4869.js": "/philxavier/Bookfinder/precache-manifest.76c1ccbe36bb617a8f445d16d99b4869.js",
+    "service-worker.js": "/philxavier/Bookfinder/service-worker.js",
+    "static/css/main.f3a11ab6.chunk.css.map": "/philxavier/Bookfinder/static/css/main.f3a11ab6.chunk.css.map"
+  }
+}
