@@ -2,8 +2,6 @@ import React from "react";
 import { Button } from "semantic-ui-react";
 
 export default function BookContainer(props) {
-  console.log(props.bookInfo);
-
   const handleClick = link => {
     window.open(link, "_blank");
   };

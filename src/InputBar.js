@@ -13,21 +13,21 @@ export default function InputBar(props) {
   return (
     <div style={{ marginTop: "5%" }}>
       <h1 style={{ color: "#a1a1a1" }}> Book Finder </h1>
-      <input
-        onChange={e => {
-          updateState(e);
-        }}
-        type="text"
-        style={{ width: "300px", height: "35px" }}
-      ></input>
-      <Button
-        color="teal"
-        onClick={e => {
+      <form
+        onSubmit={e => {
+          e.preventDefault();
           props.getBooks(searchTerm);
         }}
       >
-        Search
-      </Button>
+        <input
+          onChange={e => {
+            updateState(e);
+          }}
+          type="text"
+          style={{ width: "300px", height: "35px" }}
+        ></input>
+        <Button color="teal">Search</Button>
+      </form>
     </div>
   );
 }

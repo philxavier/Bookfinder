@@ -38,7 +38,10 @@ function App(props) {
         }
       })
       .catch(err => {
-        console.log("this is the err", err);
+        console.log(
+          "Axios request not completed. The following error occurred",
+          err
+        );
       });
   };
 
