@@ -11,7 +11,7 @@ export default function InputBar(props) {
   };
 
   return (
-    <div style={{ marginTop: "5%" }}>
+    <div style={{ marginTop: "5%", width: "100%" }}>
       <h1 style={{ color: "#a1a1a1" }}> Book Finder </h1>
       <form
         onSubmit={e => {

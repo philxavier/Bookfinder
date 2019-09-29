@@ -9,7 +9,6 @@ export default function BookContainer(props) {
   return (
     <div
       style={{
-        background: "yellow",
         position: "relative",
         marginBottom: "20%"
       }}

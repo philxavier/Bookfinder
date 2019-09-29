@@ -4,6 +4,21 @@ body {
 
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 12%;
+  grid-column-gap: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+  .column-div {
+    display: block;
+  }
 }
 
 @keyframes App-logo-spin {

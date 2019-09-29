@@ -60,11 +60,13 @@ function App(props) {
   };
 
   return (
-    <div className="App">
+    <div style={{ textAlign: "center", width: "100%" }}>
       <InputBar getBooks={getBooks} />
-      {loading ? startSpinner() : null}
-      {!found ? notFoundSegment() : null}
-      {!loading && books.length ? <BooksContainer books={books} /> : null}
+      <div className="App">
+        {loading ? startSpinner() : null}
+        {!found ? notFoundSegment() : null}
+        {!loading && books.length ? <BooksContainer books={books} /> : null}
+      </div>
     </div>
   );
 }
