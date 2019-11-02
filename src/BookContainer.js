@@ -1,10 +1,22 @@
 import React from "react";
 import { Button } from "semantic-ui-react";
+import { connect } from "react-redux";
+import { updateList } from "./store/actions/Action";
 
-export default function BookContainer(props) {
+function BookContainer(props) {
   const handleClick = link => {
     window.open(link, "_blank");
   };
+
+  let {
+    title,
+    subtitle,
+    authors,
+    imageLinks,
+    description
+  } = props.bookInfo.volumeInfo;
+
+  console.log(props.bookInfo.volumeInfo);
 
   return (
     <div
@@ -46,7 +58,8 @@ export default function BookContainer(props) {
               paddingLeft: "5%",
               color: "#a1a1a1",
               paddingRight: "5px",
-              textOverflow: "ellipsis"
+              textOverflow: "ellipsis",
+              width: "100%"
             }}
           >
             <h3 style={{ color: "#979797", textOverflow: "ellipsis" }}>
@@ -62,15 +75,34 @@ export default function BookContainer(props) {
             {props.bookInfo.volumeInfo.publisher
               ? `Published By: ${props.bookInfo.volumeInfo.publisher}`
               : null}
-            <div style={{ marginTop: "3%" }}>
-              <Button
-                onClick={() => {
-                  handleClick(props.bookInfo.volumeInfo.canonicalVolumeLink);
-                }}
-                color="teal"
-              >
-                See this book
-              </Button>
+            <div style={{ marginTop: "3%", width: "90%" }}>
+              <div style={{ width: "100%" }}>
+                <Button
+                  onClick={() => {
+                    handleClick(props.bookInfo.volumeInfo.canonicalVolumeLink);
+                  }}
+                  color="teal"
+                >
+                  See this book
+                </Button>
+              </div>
+              <div style={{ width: "100%", marginTop: "5px" }}>
+                <Button
+                  onClick={() => {
+                    let bookForSearchbar = {
+                      title,
+                      subtitle,
+                      authors,
+                      imageLinks,
+                      description
+                    };
+                    props.updateList(bookForSearchbar);
+                  }}
+                  color="blue"
+                >
+                  Add to List{" "}
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -78,3 +110,16 @@ export default function BookContainer(props) {
     </div>
   );
 }
+
+const mapDispatchToProps = dispatch => {
+  return {
+    updateList: book => {
+      dispatch(updateList(book));
+    }
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(BookContainer);

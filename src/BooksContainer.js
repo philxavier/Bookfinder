@@ -24,7 +24,7 @@ export default function BooksContainer(props) {
       >
         {props.books.map((ele, ind) => {
           return (
-            <div style={{}}>
+            <div key={ind} style={{}}>
               <BookContainer key={ind} bookInfo={ele} />
             </div>
           );
