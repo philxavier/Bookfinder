@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "960a4c5b6da0c72768ded43fa57973e3",
+    "revision": "db0594d36865b766da015b7b0a9fd2e6",
     "url": "/Bookfinder/index.html"
   },
   {
-    "revision": "abba05fbf764554e243c",
+    "revision": "a5f0d99671bb2e0267f8",
     "url": "/Bookfinder/static/css/main.f23a0167.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bookfinder/static/js/2.4ebfe23b.chunk.js"
   },
   {
-    "revision": "abba05fbf764554e243c",
-    "url": "/Bookfinder/static/js/main.2c813c4e.chunk.js"
+    "revision": "a5f0d99671bb2e0267f8",
+    "url": "/Bookfinder/static/js/main.29dfc4c5.chunk.js"
   },
   {
     "revision": "f4acce802a29ca08aa30",
