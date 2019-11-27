@@ -11,17 +11,18 @@ import { SaveBooks } from "./store/actions/Action";
 // import Sidebar from "react-sidebar";
 
 const notFoundSegment = () => (
-  <Header icon>
-    <Icon name="search" />
-    We don't have any books matching your search.
-  </Header>
+  <div style={{ marginTop: "4em" }}>
+    <Header icon>
+      <Icon name="search" />
+      We don't have any books matching your search.
+    </Header>
+  </div>
 );
 
 function Content(props) {
   //   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [found, setFound] = useState(true);
-  console.log("this is props", props);
 
   const getBooks = inputBook => {
     setLoading(true);
@@ -30,10 +31,12 @@ function Content(props) {
       .get("https://www.googleapis.com/books/v1/volumes?q=" + inputBook)
       .then(res => {
         if (res.data.totalItems === 0) {
+          console.log("there was nothing", res);
           setLoading(false);
-          props.saveBooks([]);
+          props.saveBooks([[]]);
           setFound(false);
         } else {
+          console.log("there was SOMETHING", res);
           setLoading(false);
           props.saveBooks([res.data.items]);
 
@@ -102,7 +105,4 @@ const MapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  MapStateToProps,
-  MapDispatchToProps
-)(Content);
+export default connect(MapStateToProps, MapDispatchToProps)(Content);

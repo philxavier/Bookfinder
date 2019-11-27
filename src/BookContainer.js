@@ -16,8 +16,6 @@ function BookContainer(props) {
     description
   } = props.bookInfo.volumeInfo;
 
-  console.log(props.bookInfo.volumeInfo);
-
   return (
     <div
       style={{
@@ -119,7 +117,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(BookContainer);
+export default connect(null, mapDispatchToProps)(BookContainer);

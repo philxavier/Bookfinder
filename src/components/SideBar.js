@@ -24,7 +24,6 @@ const useStyles = makeStyles({
 
 function SwipeableTemporaryDrawer(props) {
   const classes = useStyles();
-  console.log("props in sidebar", props);
 
   const toggleDrawer = (side, open) => event => {
     if (

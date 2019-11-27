@@ -5,7 +5,6 @@ import { updateModal } from "../store/actions/Action";
 import BooksContainer from "../BooksContainer";
 
 function ModalComponent(props) {
-  console.log("this is props in moda", props);
   return (
     <Modal open={props.open} onClose={props.updateModal} basic size="small">
       <Header icon="book" content={props.currentBookTitle} />
@@ -37,7 +36,4 @@ const MapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  MapStateToProps,
-  MapDispatchToProps
-)(ModalComponent);
+export default connect(MapStateToProps, MapDispatchToProps)(ModalComponent);
